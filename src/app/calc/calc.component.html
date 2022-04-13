@@ -1,1 +1,40 @@
-<p>calc works!</p>
+<div class="container">
+    <div class="container-fluid" >
+        <div class="jumbotron col-sm-4 m-5 p-2  bg-inverse">
+    
+            <h3 class="text-center">Scientific Calculator</h3>
+        
+            <div class="input-group input-group-md col-sm-12 m-0 p-2">
+                <div class="form-control text-sm-right" type="text">{{value1}}</div>
+            </div>
+        
+            <div class="col-sm-12 p-2 m-0">
+                <button class="btn btn-info col-sm-7 p-2 btn-space-top  " type="button" (click)="cancel()">C</button>
+                <button class="btn btn-lg btn-secondary col-sm-3 p-1" type="button" (click)="root()">√x</button>
+            </div>
+        
+            <div class="col-sm-12 p-2 m-0">   
+                <button class="btn btn-lg btn-outline-secondary col-sm-2 p-1 btn-space" type="button" (click)="add(7)">7</button>
+                <button class="btn btn-lg btn-outline-secondary col-sm-2 p-1 btn-space" type="button" (click)="add(8)">8</button>
+                <button class="btn btn-lg btn-outline-secondary col-sm-2 p-1 btn-space" type="button" (click)="add(9)">9</button>
+                <button class="btn btn-lg btn-secondary col-sm-3 p-1 btn-space-ops" type="button" (click)="fact()">x!</button>
+            </div>
+            <div class="col-sm-12 p-2 m-0">
+                <button class="btn btn-lg btn-outline-secondary col-sm-2 p-1 btn-space" type="button" (click)="add(4)">4</button>
+                <button class="btn btn-lg btn-outline-secondary col-sm-2 p-1 btn-space" type="button" (click)="add(5)">5</button>
+                <button class="btn btn-lg btn-outline-secondary col-sm-2 p-1 btn-space" type="button" (click)="add(6)">6</button>
+                <button class="btn btn-lg btn-secondary col-sm-3 p-1 btn-space-ops" type="button" (click)="ln()">ln(x)</button>
+            </div>
+            <div class="col-sm-12 p-2 m-0">
+                <button class="btn btn-lg btn-outline-secondary col-sm-2 p-1 btn-space" type="button" (click)="add(1)">1</button>
+                <button class="btn btn-lg btn-outline-secondary col-sm-2 p-1 btn-space" type="button" (click)="add(2)">2</button>
+                <button class="btn btn-lg btn-outline-secondary col-sm-2 p-1 btn-space" type="button" (click)="add(3)">3</button>
+                <button class="btn btn-lg btn-secondary col-sm-3 p-1 btn-space-ops" type="button" (click)="exp()">x^b</button>
+            </div>
+            <div class="col-sm-12 p-2 m-0">
+                <button class="btn btn-lg btn-outline-secondary col-sm-3 p-1 btn-space-bottom " type="button" (click)="add(0)">0</button>
+                <button class="btn btn-lg btn-success col-sm-6 p-1 " type="button" (click)="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+</div>
