@@ -16,5 +16,5 @@
         name: spe-calc
         state: started
         ports:
-          - "3000:3000"
+          - "3221:3221"
 ...
