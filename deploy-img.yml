@@ -30,5 +30,5 @@
         state: started
         auto_remove: true
         ports:
-          - "3221:3221"
+          - "3221:80"
 ...
