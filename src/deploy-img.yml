@@ -1,0 +1,20 @@
+---
+- name: Pull docker image of spe-calc
+  hosts: all
+  tasks:
+    - name: Pull spe-calc devops image
+      docker_image:
+        name: aadarsh96/spe-calc:latest
+        source: pull
+
+- name: Run Docker Image
+  hosts: all
+  tasks:
+    - name: deploy todolist docker container
+      docker_container:
+        image: aadarsh96/spe-calc:latest
+        name: spe-calc
+        state: started
+        ports:
+          - "3000:80"
+...
