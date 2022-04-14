@@ -2,15 +2,28 @@
 - name: Pull docker image of spe-calc
   hosts: all
   tasks:
+    - name: Stop Docker container
+      docker_container: 
+        name: spe-calc
+        state: stopped
+        
+    - name: Stop Docker container
+      docker_container: 
+        name: spe-calc
+        state: absent 
+        
+    - name: Remove Docker image
+      docker_image:
+        state: absent
+        name: aadarsh96/spe-calc
+        tag: latest 
+    
     - name: Pull spe-calc devops image
       docker_image:
         name: aadarsh96/spe-calc:latest
         source: pull
-
-- name: Run Docker Image
-  hosts: all
-  tasks:
-    - name: deploy todolist docker container
+        
+    - name: deploy spe-calc docker container
       docker_container:
         image: aadarsh96/spe-calc:latest
         name: spe-calc
