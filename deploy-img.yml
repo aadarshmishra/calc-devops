@@ -28,6 +28,7 @@
         image: aadarsh96/spe-calc:latest
         name: spe-calc
         state: started
+        auto_remove: true
         ports:
           - "3221:3221"
 ...
