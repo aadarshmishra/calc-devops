@@ -84,5 +84,4 @@ export class CalcComponent implements OnInit {
     this.performed = true;
     this.value = this.value1.toString();
   }
-
 }
