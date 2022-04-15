@@ -7,7 +7,7 @@
         name: spe-calc
         state: stopped
         
-    - name: Stop Docker container
+    - name: Remove Docker container
       docker_container: 
         name: spe-calc
         state: absent 
