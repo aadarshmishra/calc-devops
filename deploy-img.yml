@@ -1,5 +1,5 @@
 ---
-- name: Pull docker image of spe-calc
+- name: Ansible Deployment on target machines present in inventory file. 
   hosts: all
   tasks:
     - name: Stop Docker container
