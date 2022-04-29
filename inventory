@@ -1,1 +1,1 @@
-server1 ansible_host=172.16.134.255 ansible_user=aadarsh
+server1 ansible_host=172.16.135.160 ansible_user=aadarsh
